@@ -1,0 +1,17 @@
+body {
+	font-family: "Open Sans";
+}
+
+h1{
+	font-size: 4em;
+}
+
+h1,h2,h3,h4{text-align: center;}
+
+div#header{
+	background-color: #04BFBF;
+	font-family: "Raleway";
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

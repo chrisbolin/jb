@@ -12,9 +12,10 @@ h1,h2,h3,h4{
 	font-family: "Raleway", "Avenir", sans-serif;
 	color: white;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 30px;
 
 	h1{
+		margin: 0;
 		font-size: 4em;
 	}
 }
@@ -22,6 +23,33 @@ h1,h2,h3,h4{
 #main{
 	max-width: 600px;
 	margin: 0 auto;
+
+	#subheader{
+		margin-top: 40px;
+		h2,h3 {
+			margin: 0;
+		}
+	}
+}
+
+.small-star{
+	margin: 30px;
+	width: 40px;
+	img{
+		width: 40px;
+	}
+}
+
+.large-star{
+	width: 120px;
+	img{
+		width: 120px;
+	}
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media only screen and (max-width: 600px) {

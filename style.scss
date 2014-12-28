@@ -1,7 +1,9 @@
+$accent-color: #04BFBF;
+$max-width: 600px;
+
 body {
 	font-family: "Open Sans", "Avenir", sans-serif;
 	margin: 0;
-	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -13,45 +15,45 @@ h1,h2,h3,h4{
 	text-align: center;
 }
 
-p { font-size: 16px;}
-h3 { font-size: 26px;}
-h2 { font-size: 41px;}
-h1 { font-size: 66px;}
-
+p { font-size: 1em;}
+h3 { font-size: 1.6em;}
+h2 { font-size: 2.6em;}
+h1 { font-size: 4.1em;}
 
 #header{
-	background-color: #04BFBF;
+	background-color: $accent-color;
 	color: white;
-	padding-top: 10px;
-	padding-bottom: 30px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 
 	h1{
 		margin: 0;
 	}
 }
 
+#footer{
+	background-color: $accent-color;
+	color: white;
+	text-align: center;
+	font-size: 0.75em;
+	padding: 15px;
+	margin-top: 50px;
+}
+
 #main{
-	max-width: 600px;
+	max-width: $max-width;
 	margin: 0 auto;
 
 	#subheader{
-		margin-top: 40px;
+		margin-top: 25px;
 		h2,h3 {
 			margin: 0;
 		}
 	}
 }
 
-.small-star{
-	margin: 30px;
-	width: 40px;
-	img{
-		width: 40px;
-	}
-}
-
 .large-star{
-	width: 120px;
+	text-align: center;
 	img{
 		width: 120px;
 	}
@@ -66,5 +68,26 @@ h1 { font-size: 66px;}
 	p{
 		padding-left: 5px;
 		padding-right: 5px;
+	}
+
+	h2{
+		font-size: 1.6em;
+	}
+
+	/* make banner text smaller */
+	#header{
+		h1{
+			font-size: 1.6em;
+		}
+	}
+
+	.large-star{
+		img{
+			width: 60px;
+		}
+	}
+
+	.small-star{
+		display: none;
 	}
 }

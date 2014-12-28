@@ -1,4 +1,5 @@
-$accent-color: #04BFBF;
+$primary-color: #04BFBF;
+$secondary-color: #1D82F2;
 $max-width: 600px;
 
 body {
@@ -16,23 +17,47 @@ h1,h2,h3,h4{
 }
 
 p { font-size: 1em;}
+h4 { font-size: 1.6em;}
 h3 { font-size: 1.6em;}
 h2 { font-size: 2.6em;}
 h1 { font-size: 4.1em;}
 
-#header{
-	background-color: $accent-color;
-	color: white;
-	padding-top: 25px;
-	padding-bottom: 25px;
-
-	h1{
-		margin: 0;
-	}
+a {
+	color: $secondary-color;
 }
 
+#top{
+	background-color: $primary-color;
+	color: white;
+
+	#menu{
+		width: $max-width;
+		margin: auto;
+		padding-top: 10px;
+		text-align: right;
+		a {
+			color: white;
+			text-decoration: none;
+			padding-left: 10px; 
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+	}
+
+	#header{
+		padding-top: 25px;
+		padding-bottom: 25px;
+
+		h1{
+			margin: 0;
+		}
+	}	
+}
+
+
 #footer{
-	background-color: $accent-color;
+	background-color: $primary-color;
 	color: white;
 	text-align: center;
 	font-size: 0.75em;
@@ -52,7 +77,7 @@ h1 { font-size: 4.1em;}
 	}
 }
 
-.large-star{
+.star{
 	text-align: center;
 	img{
 		width: 120px;
@@ -64,15 +89,35 @@ h1 { font-size: 4.1em;}
 	margin-right: auto;
 }
 
+.map{
+	float: left;
+	margin: 5px;
+	iframe{
+		border: none;
+	}
+}
+
+.after-maps{
+	margin-bottom: 20px;
+	clear: both;
+}
+
+.mobile{
+	display: none;
+}
+
 @media only screen and (max-width: 600px) {
+	#menu{
+		display: none;
+	}
+
 	p{
 		padding-left: 5px;
 		padding-right: 5px;
 	}
 
-	h2{
-		font-size: 1.6em;
-	}
+	h2{ font-size: 1.6em; }
+	.mobile-small{ font-size: 1em; }
 
 	/* make banner text smaller */
 	#header{
@@ -89,5 +134,19 @@ h1 { font-size: 4.1em;}
 
 	.small-star{
 		display: none;
+	}
+
+	.map{
+		iframe{
+			display: none;
+		}
+		float: none;
+		.mobile{
+			margin-bottom: 10px;
+		}
+	}
+
+	.mobile{
+		display: inherit;
 	}
 }

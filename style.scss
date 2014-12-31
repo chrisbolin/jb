@@ -3,7 +3,7 @@ $secondary-color: #1D82F2;
 $max-width: 600px;
 
 body {
-	font-family: "Open Sans", "Avenir", sans-serif;
+	font-family: "Lato", "Avenir", sans-serif;
 	margin: 0;
 	font-style: normal;
 	font-weight: normal;
@@ -24,6 +24,10 @@ h1 { font-size: 4.1em;}
 
 a {
 	color: $secondary-color;
+}
+
+.top-margin{
+	margin-top: 50px;
 }
 
 #top{
@@ -60,8 +64,7 @@ a {
 	background-color: $primary-color;
 	color: white;
 	text-align: center;
-	font-size: 0.75em;
-	padding: 15px;
+	padding: 25px;
 	margin-top: 50px;
 }
 
@@ -70,7 +73,6 @@ a {
 	margin: 0 auto;
 
 	#subheader{
-		margin-top: 25px;
 		h2,h3 {
 			margin: 0;
 		}

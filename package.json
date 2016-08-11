@@ -4,7 +4,6 @@
   "description": "static site: jenniferbolin.com",
   "main": "index.html",
   "scripts": {
-    "build": "sass style.scss > style.css",
     "start": "divshot server & open http://localhost:3474"
   },
   "repository": {

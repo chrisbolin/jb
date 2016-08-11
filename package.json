@@ -1,0 +1,20 @@
+{
+  "name": "jenniferbolin",
+  "version": "1.0.0",
+  "description": "static site: jenniferbolin.com",
+  "main": "index.html",
+  "scripts": {
+    "build": "sass style.scss > style.css",
+    "start": "divshot server & open http://localhost:3474"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisbolin/jb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisbolin/jb/issues"
+  },
+  "homepage": "https://github.com/chrisbolin/jb#readme"
+}

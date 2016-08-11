@@ -43,7 +43,7 @@ a {
 	a {
 		color: black;
 		text-decoration: none;
-		padding-left: 10px; 
+		padding-left: 10px;
 	}
 	a:hover{
 		text-decoration: underline;
@@ -61,7 +61,7 @@ a {
 		h1{
 			margin: 0;
 		}
-	}	
+	}
 }
 
 
@@ -95,6 +95,7 @@ a {
 	margin: 5px;
 	iframe{
 		border: none;
+    pointer-events:none;
 	}
 }
 
@@ -139,12 +140,9 @@ a {
 
 	.map{
 		iframe{
-			display: none;
+			width: 100%;
 		}
 		float: none;
-		.mobile{
-			margin-bottom: 10px;
-		}
 	}
 
 	.mobile{

@@ -28,7 +28,7 @@ h1 {
   font-size: 4.1em; }
 
 a {
-  color: #1d82f2; }
+  color: #1D82F2; }
 
 .top-margin {
   margin-top: 50px; }
@@ -47,7 +47,7 @@ a {
     text-decoration: underline; }
 
 #top {
-  background-color: #04bfbf;
+  background-color: #04BFBF;
   color: white; }
   #top #header {
     padding-top: 40px;
@@ -56,7 +56,7 @@ a {
       margin: 0; }
 
 #footer {
-  background-color: #04bfbf;
+  background-color: #04BFBF;
   color: white;
   text-align: center;
   padding: 25px;
@@ -79,7 +79,8 @@ a {
   float: left;
   margin: 5px; }
   .map iframe {
-    border: none; }
+    border: none;
+    pointer-events: none; }
 
 .after-maps {
   margin-bottom: 20px;
@@ -115,9 +116,7 @@ a {
   .map {
     float: none; }
     .map iframe {
-      display: none; }
-    .map .mobile {
-      margin-bottom: 10px; }
+      width: 100%; }
 
   .mobile {
     display: inherit; } }

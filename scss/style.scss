@@ -1,0 +1,134 @@
+$secondary-color: dark-blue;
+$max-width: 600px;
+
+body {
+	font-family: "Georgia", serif;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+  ::selection {
+    background: orange;
+  }
+}
+
+* {
+  transition: all ease-out 500ms;
+}
+
+h2, h3, h4, #menu{
+  font-family: "Work Sans", Helvetica, sans-serif;
+  font-weight: 500;
+	text-align: left;
+	margin: 10px 0;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+}
+h4 { font-size: 1.2em; }
+h3 { font-size: 1.6em; }
+h1 { font-size: 4.1em; }
+
+a {
+  text-decoration: none;
+}
+
+#menu{
+	width: $max-width;
+	margin: auto;
+	padding: 10px;
+	text-align: right;
+  text-transform: uppercase;
+	a {
+		color: black;
+		margin-left: 10px;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+	}
+}
+
+#top{
+	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/407148/splash-export@932.jpg");
+  background-size: cover;
+	color: white;
+
+	#header{
+		padding: 120px 0 180px;
+    text-shadow: 1px 1px 6px black;  
+    h1, h3 {
+      text-align: center;
+      margin: 0;
+    }    
+    
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+	}
+}
+
+#footer{
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.map{
+  margin: 25px 0;  
+  div {
+    &:hover {
+      filter: brightness(80%);
+    }   
+  }
+  iframe{
+    width: 100%;
+		border: none;
+    pointer-events:none;    
+  }
+}
+
+
+.mobile{
+	display: none;
+}
+
+#main {
+	max-width: $max-width;
+	margin: 80px auto 45px;  
+  h3 {
+    margin-top: 60px;
+  }
+  a {
+    color: $secondary-color;
+    border-bottom: 2px solid rgba(0,0,0,0); 
+    &:hover {
+      border-bottom: 2px solid currentColor;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+	#menu{
+		display: none;
+	}
+
+	#main{
+		padding: 0 20px;
+	}
+
+	.mobile-small{ font-size: 1em; }
+
+	/* make banner text smaller */
+	#top #header {
+    padding: 90px 0;    
+		h1{ font-size: 2em; }
+    h3{ font-size: 1em; }
+	}
+
+	.mobile{
+		display: inherit;
+  }
+}

@@ -4,7 +4,8 @@
   "description": "static site: jenniferbolin.com",
   "main": "index.html",
   "scripts": {
-    "start": "divshot server & open http://localhost:3474"
+    "start": "divshot server & open http://localhost:3474",
+    "live": "open http://www.jenniferbolin.com"
   },
   "repository": {
     "type": "git",
